@@ -1,0 +1,637 @@
+{
+  "verzija": "1.0",
+  "datum": "2026-03-28T17:51:23.945Z",
+  "korisnik": "t",
+  "brojac": {
+    "godina": 2026,
+    "broj": 8
+  },
+  "artikli": [
+    {
+      "sifra": "0000001",
+      "naziv": "Igla br. 1",
+      "bar": "3859889703888"
+    },
+    {
+      "sifra": "0000002",
+      "naziv": "Igla br. 2",
+      "bar": "3859889703895"
+    },
+    {
+      "sifra": "0000007",
+      "naziv": "Kanjare 100 m",
+      "bar": "3859889703185"
+    },
+    {
+      "sifra": "0000008",
+      "naziv": "Kanjare 70 m",
+      "bar": "3859889703178"
+    },
+    {
+      "sifra": "0000009",
+      "naziv": "Kanjare 50 m",
+      "bar": "3859889703161"
+    },
+    {
+      "sifra": "0000017",
+      "naziv": "Motavilo kavical",
+      "bar": "3859889703277"
+    },
+    {
+      "sifra": "0000018",
+      "naziv": "Motavilo samica br. 1",
+      "bar": "3859889703253"
+    },
+    {
+      "sifra": "0000019",
+      "naziv": "Motavilo samica br. 2",
+      "bar": "3859889703260"
+    },
+    {
+      "sifra": "0000020",
+      "naziv": "Motavilo tunja br. 1",
+      "bar": "3859889703284"
+    },
+    {
+      "sifra": "0000021",
+      "naziv": "Motavilo tunja br. 2",
+      "bar": "3859889703291"
+    },
+    {
+      "sifra": "0000022",
+      "naziv": "Motavilo tunja br. 3",
+      "bar": "3859889703307"
+    },
+    {
+      "sifra": "0000023",
+      "naziv": "Motavilo tunja br. 4",
+      "bar": "3859889703314"
+    },
+    {
+      "sifra": "0000024",
+      "naziv": "Motavilo tunja br. 5",
+      "bar": "3859889703321"
+    },
+    {
+      "sifra": "0000025",
+      "naziv": "Motavilo tunja br. 6",
+      "bar": "3859889703338"
+    },
+    {
+      "sifra": "0000028",
+      "naziv": "Olovo kanjara 100 g",
+      "bar": "9859889703376"
+    },
+    {
+      "sifra": "0000030",
+      "naziv": "Olovo kanjara 45 g",
+      "bar": "3859889703369"
+    },
+    {
+      "sifra": "0000031",
+      "naziv": "Olovo oliva 30 g",
+      "bar": "3859889703345"
+    },
+    {
+      "sifra": "0000032",
+      "naziv": "Olovo samice 70 g",
+      "bar": "3859889703352"
+    },
+    {
+      "sifra": "0000033",
+      "naziv": "Parangal 100 udica-konop",
+      "bar": "3859889703512"
+    },
+    {
+      "sifra": "0000034",
+      "naziv": "Parangal 100 udica-najlon",
+      "bar": "3858884193557"
+    },
+    {
+      "sifra": "0000053",
+      "naziv": "Plovak stiropor br. 1",
+      "bar": "3859889703604"
+    },
+    {
+      "sifra": "0000054",
+      "naziv": "Plovak stiropor br. 2",
+      "bar": "3859889703611"
+    },
+    {
+      "sifra": "0000055",
+      "naziv": "Plovak stiropor br. 3",
+      "bar": "3859889703628"
+    },
+    {
+      "sifra": "0000057",
+      "naziv": "Plovak stiropol br. 5",
+      "bar": "3859889703642"
+    },
+    {
+      "sifra": "0000059",
+      "naziv": "Plovak stiropor br. 7",
+      "bar": "3859889703666"
+    },
+    {
+      "sifra": "0000062",
+      "naziv": "Plovak stiropor br. 10",
+      "bar": "3859889703697"
+    },
+    {
+      "sifra": "0000071",
+      "naziv": "Samice 30 m",
+      "bar": "3859889703062"
+    },
+    {
+      "sifra": "0000072",
+      "naziv": "Samice 40 m",
+      "bar": "3859889703079"
+    },
+    {
+      "sifra": "0000073",
+      "naziv": "Samice 50 m",
+      "bar": "3859889703086"
+    },
+    {
+      "sifra": "0000074",
+      "naziv": "Samice 30 m plosnate",
+      "bar": "3859889703093"
+    },
+    {
+      "sifra": "0000075",
+      "naziv": "Samice 40 m plosnate",
+      "bar": "3859889703109"
+    },
+    {
+      "sifra": "0000088",
+      "naziv": "Standard najlon 0.50",
+      "bar": "3859889703802"
+    },
+    {
+      "sifra": "0000089",
+      "naziv": "Standard najlon 0.55",
+      "bar": "3859889703819"
+    },
+    {
+      "sifra": "0000090",
+      "naziv": "Standard najlon 0.60",
+      "bar": "3859889703826"
+    },
+    {
+      "sifra": "0000091",
+      "naziv": "Standard najlon 0.70",
+      "bar": "3859889703833"
+    },
+    {
+      "sifra": "0000092",
+      "naziv": "Standard najlon 0.80",
+      "bar": "3859889703840"
+    },
+    {
+      "sifra": "0000093",
+      "naziv": "Standard najlon 0.90",
+      "bar": "3859889703857"
+    },
+    {
+      "sifra": "0000094",
+      "naziv": "Standard najlon 1.00",
+      "bar": "3859889703864"
+    },
+    {
+      "sifra": "0000095",
+      "naziv": "Tunjice 20 m",
+      "bar": "3859889703123"
+    },
+    {
+      "sifra": "0000096",
+      "naziv": "Tunjice 25 m",
+      "bar": "3859889703130"
+    },
+    {
+      "sifra": "0000097",
+      "naziv": "Tunjice 30 m",
+      "bar": "3859889703147"
+    },
+    {
+      "sifra": "0000098",
+      "naziv": "Tunjice 40 m",
+      "bar": "3859889703154"
+    },
+    {
+      "sifra": "0000114",
+      "naziv": "Volige",
+      "bar": "3859889703017"
+    },
+    {
+      "sifra": "0000123",
+      "naziv": "Šaranke 20 m",
+      "bar": "3859889703215"
+    },
+    {
+      "sifra": "0000125",
+      "naziv": "Šaranke 30 m",
+      "bar": "3859889703239"
+    },
+    {
+      "sifra": "0000132",
+      "naziv": "\"Motavilo tunja \"\"Iž\"\"\"",
+      "bar": "3858884191041"
+    },
+    {
+      "sifra": "0000133",
+      "naziv": "Igla br. 3",
+      "bar": "3859889703901"
+    },
+    {
+      "sifra": "0000134",
+      "naziv": "Igla br. 4",
+      "bar": "3859889703918"
+    },
+    {
+      "sifra": "0000140",
+      "naziv": "Parangal 50 udica - konop",
+      "bar": "3859889703529"
+    },
+    {
+      "sifra": "0000141",
+      "naziv": "Parangal 50 udica - najlon",
+      "bar": "3858884195131"
+    },
+    {
+      "sifra": "0000143",
+      "naziv": "Parangal 10 udica-najlon",
+      "bar": "3859889703994"
+    },
+    {
+      "sifra": "0000144",
+      "naziv": "Tunjica sa plov 40 m",
+      "bar": "3859889703581"
+    },
+    {
+      "sifra": "0000146",
+      "naziv": "Tunjica sa plov 25 m",
+      "bar": "3859889703475"
+    },
+    {
+      "sifra": "0000147",
+      "naziv": "Tunjica sa plov 30 m",
+      "bar": "3859889703482"
+    },
+    {
+      "sifra": "0000148",
+      "naziv": "Parangal 30 udica - najlon",
+      "bar": "3858884195056"
+    },
+    {
+      "sifra": "0000149",
+      "naziv": "Voliga L",
+      "bar": "3859889703963"
+    },
+    {
+      "sifra": "0000154",
+      "naziv": "Motavilo panula",
+      "bar": "3858884195032"
+    },
+    {
+      "sifra": "0000155",
+      "naziv": "Olovo kanjara 70 g",
+      "bar": "0000155"
+    },
+    {
+      "sifra": "0000156",
+      "naziv": "Parangal plovak 100 udica  najlon",
+      "bar": "3859889703512"
+    },
+    {
+      "sifra": "0000167",
+      "naziv": "Kavical konop 50 m",
+      "bar": "3858884195087"
+    },
+    {
+      "sifra": "0000170",
+      "naziv": "Panula za zubace",
+      "bar": "3858884195094"
+    },
+    {
+      "sifra": "0000171",
+      "naziv": "Panula za brancine",
+      "bar": "3858884195063"
+    },
+    {
+      "sifra": "0000172",
+      "naziv": "Panula za lignje",
+      "bar": "3858884195070"
+    },
+    {
+      "sifra": "0000176",
+      "naziv": "Parangal plovak 30 udica  konop",
+      "bar": "3858884192772"
+    },
+    {
+      "sifra": "0000177",
+      "naziv": "Parangal plovak 50 udica  konop",
+      "bar": "3858884190877"
+    },
+    {
+      "sifra": "0000183",
+      "naziv": "Parangal plovak 100 udica  konop",
+      "bar": "3858884190778"
+    },
+    {
+      "sifra": "0000184",
+      "naziv": "Plovak za parangal fi 18 mm",
+      "bar": "3858884192338"
+    },
+    {
+      "sifra": "0000186",
+      "naziv": "Lignjarica skosavica",
+      "bar": "3858884192192"
+    },
+    {
+      "sifra": "0000187",
+      "naziv": "Lignjarica peškafondo",
+      "bar": "3858884191669"
+    },
+    {
+      "sifra": "0000191",
+      "naziv": "Motavilo dino",
+      "bar": "3858884195018"
+    },
+    {
+      "sifra": "0000195",
+      "naziv": "Samice 50 m plosnate",
+      "bar": "3858884191768"
+    },
+    {
+      "sifra": "0000198",
+      "naziv": "Parangal plovak 30 udica najlon",
+      "bar": "3858884195056"
+    },
+    {
+      "sifra": "0000199",
+      "naziv": "Parangal plovak 50 udica  najlon",
+      "bar": "3858884190778"
+    },
+    {
+      "sifra": "0001025",
+      "naziv": "Set za sipe",
+      "bar": "3858884192185"
+    },
+    {
+      "sifra": "0001035",
+      "naziv": "Predvez  živu ješku",
+      "bar": "3858884191942"
+    },
+    {
+      "sifra": "0001142",
+      "naziv": "Parangal 30 udica - konop",
+      "bar": "3858884192680"
+    },
+    {
+      "sifra": "0001504",
+      "naziv": "Olovo 5g  - 10 kom",
+      "bar": "3858884192253"
+    },
+    {
+      "sifra": "0002505",
+      "naziv": "Olovo 15g -10 kom",
+      "bar": "3858884191829"
+    },
+    {
+      "sifra": "0463207",
+      "naziv": "Olovo 7g - 10 kom",
+      "bar": "3858884194486"
+    },
+    {
+      "sifra": "0463403",
+      "naziv": "Olovo 3g - 10 kom",
+      "bar": "3858884192246"
+    },
+    {
+      "sifra": "0463410",
+      "naziv": "Olovo 10g - 10 kom",
+      "bar": "3858884194400"
+    },
+    {
+      "sifra": "121",
+      "naziv": "Šaranke 10 m",
+      "bar": "3859889703192"
+    },
+    {
+      "sifra": "130",
+      "naziv": "Sak za ribu 100 cm",
+      "bar": "3858884194752"
+    },
+    {
+      "sifra": "1512",
+      "naziv": "Kofa za parangal 30 udica 19x44cm",
+      "bar": "3858884191492"
+    },
+    {
+      "sifra": "1513",
+      "naziv": "Kofa za parangal 50udica 19x44cm",
+      "bar": "3858884191447"
+    },
+    {
+      "sifra": "1514",
+      "naziv": "Kofa za parangal 100 udica 19x50cm",
+      "bar": "3858884192796"
+    },
+    {
+      "sifra": "1516",
+      "naziv": "Kofa za parangal 100 udica 26x50cm",
+      "bar": "3858884191447"
+    },
+    {
+      "sifra": "160",
+      "naziv": "Kavical konop 50m + olovo 500g",
+      "bar": "3858884192604"
+    },
+    {
+      "sifra": "161",
+      "naziv": "Kančanica profi",
+      "bar": "3858884195148"
+    },
+    {
+      "sifra": "182",
+      "naziv": "Olovo kanjara 80 g",
+      "bar": ""
+    },
+    {
+      "sifra": "2055000",
+      "naziv": "Udice vezane 10/1 6-9",
+      "bar": "3858884194080"
+    },
+    {
+      "sifra": "220",
+      "naziv": "Kavical L konop 100 m",
+      "bar": "3858884193540"
+    },
+    {
+      "sifra": "221",
+      "naziv": "Kavical L konop 100m +500g olovo",
+      "bar": "3858884193557"
+    },
+    {
+      "sifra": "401",
+      "naziv": "Panula za zubace travaše",
+      "bar": "3858884192963"
+    },
+    {
+      "sifra": "402",
+      "naziv": "Lignjarica Tataki",
+      "bar": "3858884192017"
+    },
+    {
+      "sifra": "4123031",
+      "naziv": "Plovci",
+      "bar": "676844148064"
+    },
+    {
+      "sifra": "54065",
+      "naziv": "Naglavna lampa traka",
+      "bar": "4029569980109"
+    },
+    {
+      "sifra": "54066",
+      "naziv": "Naglavna lampa 035",
+      "bar": "4029569980215"
+    },
+    {
+      "sifra": "6000017",
+      "naziv": "Konop za rublje10m",
+      "bar": "6000017"
+    },
+    {
+      "sifra": "6000019",
+      "naziv": "Konop za rublje20m",
+      "bar": "6000019"
+    },
+    {
+      "sifra": "6000021",
+      "naziv": "Konop za rublje30m",
+      "bar": "6000021"
+    },
+    {
+      "sifra": "7035170",
+      "naziv": "Podmetač  1.70 m",
+      "bar": "3858884191355"
+    }
+  ],
+  "kupci": [
+    {
+      "naziv": "KONZUM 17",
+      "adresa": "ZADAR"
+    },
+    {
+      "naziv": "TOMMY 2",
+      "adresa": "SPLIT"
+    }
+  ],
+  "arhiva": [
+    {
+      "broj": "2026 / T001",
+      "datum": "2026-03-21T19:42:38.320Z",
+      "kupacNaziv": "KONZUM 17",
+      "adresa": "ZADAR",
+      "stavke": [
+        {
+          "sifra": "0000001",
+          "naziv": "Igla br. 1",
+          "bar": "3859889703888",
+          "kolicina": 1
+        }
+      ]
+    },
+    {
+      "broj": "2026 / T002",
+      "datum": "2026-03-21T19:47:24.982Z",
+      "kupacNaziv": "KONZUM 17",
+      "adresa": "ZADAR",
+      "stavke": [
+        {
+          "sifra": "0000008",
+          "naziv": "Kanjare 70 m",
+          "bar": "3859889703178",
+          "kolicina": 120
+        },
+        {
+          "sifra": "0000002",
+          "naziv": "Igla br. 2",
+          "bar": "3859889703895",
+          "kolicina": 240
+        }
+      ]
+    },
+    {
+      "broj": "2026 / T003",
+      "datum": "2026-03-21T19:53:05.243Z",
+      "kupacNaziv": "test",
+      "adresa": "",
+      "stavke": [
+        {
+          "sifra": "0000008",
+          "naziv": "Kanjare 70 m",
+          "bar": "3859889703178",
+          "kolicina": 2400
+        }
+      ]
+    },
+    {
+      "broj": "2026 / T004",
+      "datum": "2026-03-21T21:01:01.325Z",
+      "kupacNaziv": "",
+      "adresa": "",
+      "stavke": [
+        {
+          "sifra": "0000002",
+          "naziv": "Igla br. 2",
+          "bar": "3859889703895",
+          "kolicina": 1200
+        }
+      ]
+    },
+    {
+      "broj": "2026 / T005",
+      "datum": "2026-03-21T21:03:51.375Z",
+      "kupacNaziv": "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
+      "adresa": "",
+      "stavke": [
+        {
+          "sifra": "0000007",
+          "naziv": "Kanjare 100 m",
+          "bar": "3859889703185",
+          "kolicina": 1200
+        }
+      ]
+    },
+    {
+      "broj": "2026 / T006",
+      "datum": "2026-03-28T17:35:04.641Z",
+      "kupacNaziv": "",
+      "adresa": "",
+      "stavke": [
+        {
+          "sifra": "0000132",
+          "naziv": "\"Motavilo tunja \"\"Iž\"\"\"",
+          "bar": "3858884191041",
+          "kolicina": 1200
+        }
+      ]
+    },
+    {
+      "broj": "2026 / T007",
+      "datum": "2026-03-28T17:49:42.495Z",
+      "kupacNaziv": "KONZUM 17",
+      "adresa": "ZADAR",
+      "stavke": [
+        {
+          "sifra": "0000132",
+          "naziv": "\"Motavilo tunja \"\"Iž\"\"\"",
+          "bar": "3858884191041",
+          "kolicina": "2000"
+        }
+      ]
+    }
+  ]
+}

@@ -15,14 +15,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
 <script src="https://unpkg.com/html5-qrcode"></script>
-<!-- Splash screen za iOS -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="apple-touch-startup-image" href="splash.png">
 
-<!-- Boja adresne trake -->
-<meta name="theme-color" content="#1976d2">
-<meta name="msapplication-TileColor" content="#1976d2">
 <style>
 :root {
     --blue: #2563eb;
@@ -576,61 +569,6 @@ small {
     margin-top: 6px;
     margin-bottom: 0;
 }
-/* Toast notifikacije - DODAJTE OVO NA KRAJ STYLE SEKCIJE */
-.toast {
-    position: fixed;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 12px 24px;
-    border-radius: 50px;
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    z-index: 9999;
-    animation: slideUp 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    max-width: 90%;
-    text-align: center;
-    white-space: nowrap;
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateX(-50%) translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-}
-
-.toast-success {
-    background: linear-gradient(135deg, #16a34a, #15803d);
-}
-
-.toast-error {
-    background: linear-gradient(135deg, #dc2626, #b91c1c);
-}
-
-.toast-info {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-}
-
-.toast-warning {
-    background: linear-gradient(135deg, #eab308, #ca8a04);
-}
-
-@media (max-width: 480px) {
-    .toast {
-        bottom: 70px;
-        padding: 10px 20px;
-        font-size: 13px;
-        white-space: normal;
-        max-width: 85%;
-    }
-}
 </style>
 
 <!-- ===== OVDJE ĆEŠ UMETNUTI ROBOTO REGULAR ===== -->
@@ -1002,8 +940,6 @@ function azurirajStatus(tip, poruka) {
     
     let vrijeme = new Date().toLocaleTimeString('hr-HR');
     backupTime.textContent = vrijeme;
-    
-    // ⬇️⬇️⬇️ DODAJTE OVO - prikaži info o zadnjem backup-u ⬇️⬇️⬇️
     let lastBackup = localStorage.getItem('lastBackup');
     if (lastBackup) {
         try {
@@ -1160,7 +1096,6 @@ async function initApp() {
     
     // Pokreni auto backup timer
     pokreniAutoBackupTimer();
-    showToast("Aplikacija spremna", "success");
 }
 
 /* ================= KORISNIK (CIJELO IME, AVATAR PRVO SLOVO) ================= */
@@ -1184,8 +1119,6 @@ async function initKorisnik() {
                 await dbSpremi(STORE_KORISNIK, ime, 'ime');
                 input.disabled = true;
                 slovoSpan.textContent = ime.charAt(0).toUpperCase();
-                
-                // ⬇️⬇️⬇️ DODAJTE OVO ⬇️⬇️⬇️
                 await automatskiBackup();
             }
         });
@@ -1198,8 +1131,6 @@ async function initKorisnik() {
                     await dbSpremi(STORE_KORISNIK, ime, 'ime');
                     input.disabled = true;
                     slovoSpan.textContent = ime.charAt(0).toUpperCase();
-                    
-                    // ⬇️⬇️⬇️ DODAJTE OVO ⬇️⬇️⬇️
                     await automatskiBackup();
                 }
             }
@@ -1255,9 +1186,7 @@ async function importArtikli() {
 
         artikli = await dbDohvatiSve(STORE_ARTIKLI);
         osvjeziListe();
-        showToast(`Artikli učitani (${noviArtikli.length} artikala)`, "success");
-        
-        // ⬇️⬇️⬇️ DODAJTE OVO ⬇️⬇️⬇️
+        alert("Artikli učitani");
         await automatskiBackup();
     };
     r.readAsText(f, 'UTF-8');
@@ -1281,9 +1210,7 @@ async function importKupci() {
 
         kupci = await dbDohvatiSve(STORE_KUPCI);
         osvjeziListe();
-        showToast(`Kupci učitani (${noviKupci.length} kupaca)`, "success");
-        
-        // ⬇️⬇️⬇️ DODAJTE OVO ⬇️⬇️⬇️
+        alert("Kupci učitani");
         await automatskiBackup();
     };
     r.readAsText(f, 'UTF-8');
@@ -1294,10 +1221,7 @@ function dodajArtikl() {
     let kol = parseFloat(document.getElementById("kolicinaInput").value);
 
     let a = artikli.find(x => x.naziv === naziv);
-    if (!a || !kol) {
-    showToast("Provjeri unos artikla i količinu", "error");
-    return;
-}
+    if (!a || !kol) return alert("Provjeri unos");
 
     // 🔹 PROVJERA postoji li već u stavkama (po šifri ili nazivu)
     let postojeci = stavke.find(s => s.sifra === a.sifra);
@@ -1333,10 +1257,9 @@ function prikaziStavke() {
         </tr>`;
     });
 }
+
 function promijeniKolicinu(i, val) {
-    let staraKolicina = stavke[i].kolicina;
     stavke[i].kolicina = val;
-    showToast(`Količina promijenjena: ${stavke[i].naziv} (${staraKolicina} → ${val})`, "info");
 }
 
 function obrisi(i) {
@@ -1359,9 +1282,8 @@ function pokreniScanner() {
                         document.getElementById("artiklInput").value = a.naziv;
                         document.getElementById("kolicinaInput").value = 1;
                         if (navigator.vibrate) navigator.vibrate(200);
-                        showToast(`Skeniran: ${a.naziv}`, "success");
                     } else {
-                        showToast(`Artikl s barkodom ${kod} nije pronađen`, "error");
+                        alert("Artikl s bar kodom " + kod + " nije pronađen");
                     }
                     zatvoriScanner();
                 });
@@ -1394,9 +1316,9 @@ async function automatskiBackup() {
             arhiva: await dbDohvatiSve(STORE_ARHIVA)
         };
 
-        await dbSpremi(STORE_BACKUP, backup);
+        // Popravljen poziv - dodan treći parametar (ključ)
+        await dbSpremi(STORE_BACKUP, backup, backup.timestamp);
         
-        // Spremi i u localStorage kao dodatnu sigurnost
         localStorage.setItem('lastBackup', JSON.stringify({
             timestamp: backup.timestamp,
             size: JSON.stringify(backup).length
@@ -1404,27 +1326,22 @@ async function automatskiBackup() {
         
         console.log('Auto backup uspješan', new Date().toLocaleTimeString());
         
-        // Ažuriraj status bar
         let vrijeme = new Date().toLocaleTimeString('hr-HR');
         let backupTime = document.getElementById("backupTime");
         if (backupTime) backupTime.textContent = vrijeme + " (backup)";
-    showToast("💾 Automatski backup spremljen", "info");
         
     } catch (err) {
         console.error('Auto backup greška:', err);
-        showToast("Greška pri automatskom backup-u", "error");
     }
 }
 async function spremiOtpremnicu() {
-    if (stavke.length === 0) {
-    showToast("Nema stavki za spremanje", "warning");
-    return;
-}
+    if (stavke.length === 0) return alert("Nema stavki");
+
     let korisnik = await dbDohvatiJedan(STORE_KORISNIK, 'ime');
     if (!korisnik) {
-        showToast("Prvo unesi ime korisnika!", "error");
+        alert("Prvo unesi ime korisnika!");
         return;
-}
+    }
     let prvoSlovo = korisnik.charAt(0).toUpperCase();
 
     let godina = new Date().getFullYear();
@@ -1462,9 +1379,9 @@ async function spremiOtpremnicu() {
     stavke = [];
     prikaziStavke();
     prikaziArhivu();
-    
-    // ⬇️⬇️⬇️ DODAJTE OVO ⬇️⬇️⬇️
+    // Nakon uspješnog spremanja, napravi backup
     await automatskiBackup();
+
 }
 
 function prikaziArhivu() {
@@ -1510,9 +1427,7 @@ async function spremiBackup() {
     a.click();
 
     URL.revokeObjectURL(url);
-    showToast("Backup spremljen na disk", "success");
 }
-
 
 document.getElementById('ucitajBackupFile').addEventListener('change', async function(e) {
     let file = e.target.files[0];
@@ -1553,7 +1468,7 @@ document.getElementById('ucitajBackupFile').addEventListener('change', async fun
             }
 
             await ucitajSvePodatke();
-            showToast("Podaci uspješno vraćeni iz backup-a", "success");
+            alert('Podaci uspješno učitani!');
 
         } catch (err) {
             alert('Greška pri učitavanju: ' + err.message);

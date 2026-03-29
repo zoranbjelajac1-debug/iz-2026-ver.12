@@ -24,3 +24,19 @@ self.addEventListener('fetch', event => {
       .then(response => response || fetch(event.request))
   );
 });
+// sw.js - dodajte fallback za fontove
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        if (response) return response;
+        return fetch(event.request).catch(() => {
+          // Fallback za fontove
+          if (event.request.url.includes('.ttf')) {
+            return caches.match('/fonts/fallback.ttf');
+          }
+          return new Response('Offline', { status: 404 });
+        });
+      })
+  );
+});

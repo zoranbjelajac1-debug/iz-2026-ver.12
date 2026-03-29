@@ -12,7 +12,39 @@ let syncQueue = JSON.parse(localStorage.getItem("syncQueue") || "[]");
 
 let autosaveTimer;
 
+// Dodajte nakon svake promjene podataka
+async function automatskiBackup() {
+    try {
+        const backup = {
+            timestamp: Date.now(),
+            verzija: "1.0",
+            korisnik: await dbDohvatiJedan(STORE_KORISNIK, 'ime'),
+            brojac: await dbDohvatiJedan(STORE_BROJAC, 'brojac'),
+            artikli: await dbDohvatiSve(STORE_ARTIKLI),
+            kupci: await dbDohvatiSve(STORE_KUPCI),
+            arhiva: await dbDohvatiSve(STORE_ARHIVA)
+        };
 
+        // Spremi u IndexedDB
+        await dbSpremi(STORE_BACKUP, backup);
+        
+        // Spremi i u localStorage kao dodatnu sigurnost
+        localStorage.setItem('lastBackup', JSON.stringify({
+            timestamp: backup.timestamp,
+            size: JSON.stringify(backup).length
+        }));
+        
+        console.log('Auto backup uspješan', new Date().toLocaleTimeString());
+    } catch (err) {
+        console.error('Auto backup greška:', err);
+    }
+}
+
+// Pozovite automatskiBackup nakon svake važne operacije:
+// - nakon importArtikli()
+// - nakon importKupci()
+// - nakon spremiOtpremnicu()
+// - nakon promjene korisnika
 /* ================= AUTOSAVE ================= */
 
 function autosave() {
@@ -187,7 +219,30 @@ function obrisiStavku(index) {
     autosave();
 }
 
-
+// ================= TOAST NOTIFIKACIJE =================
+function showToast(message, type = 'success') {
+    // Ukloni postojeći toast ako postoji
+    let existingToast = document.querySelector('.toast');
+    if (existingToast) existingToast.remove();
+    
+    let toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+    
+    // Dodaj ikonu prema tipu
+    let icon = '';
+    if (type === 'success') icon = '✅ ';
+    else if (type === 'error') icon = '❌ ';
+    else if (type === 'info') icon = 'ℹ️ ';
+    else if (type === 'warning') icon = '⚠️ ';
+    
+    toast.textContent = icon + message;
+    document.body.appendChild(toast);
+    
+    // Automatski ukloni nakon 2.5 sekundi
+    setTimeout(() => {
+        if (toast && toast.remove) toast.remove();
+    }, 2500);
+}
 /* ================= IMPORT ================= */
 
 function importArtikli() {
